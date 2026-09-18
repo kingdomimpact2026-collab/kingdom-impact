@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b1f3a"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="kingdom-impact-logo.jpg">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kingdom Impact Technologies Inc.</title>
@@ -23,7 +23,7 @@ footer{background:#061f57;color:#fff;padding:35px 0}.foot{display:flex;justify-c
 @media(max-width:760px){.grid,.fields{grid-template-columns:1fr}.services{grid-template-columns:1fr}.links{display:none}h1{font-size:40px}}
 </style>
 </head>
-<body>
+<body><button id="installAppBtn" type="button" style="display:none;margin:10px auto;padding:12px 18px;border:0;border-radius:999px;background:#d4a72c;color:#0b1f3a;font-weight:700;cursor:pointer">📲 Install Kingdom Impact App</button>
 <nav><div class="wrap nav"><div class="brand"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact Technologies Inc. logo" style="height:42px;vertical-align:middle;margin-right:8px;border-radius:6px">KINGDOM <span>IMPACT</span> TECHNOLOGIES INC.</div>
 <div class="links"><a href="#services">Services</a><a href="#request">Request a Solution</a><a href="https://wa.me/231778579741" target="_blank">WhatsApp</a></div></div></nav>
 
@@ -63,4 +63,11 @@ document.getElementById('form').addEventListener('submit',function(e){
  window.open('https://wa.me/231778579741?text='+msg,'_blank');
 });
 </script>
-</body></html>
+<script>
+if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+let deferredPrompt;
+const b=document.getElementById('installAppBtn');
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;if(b)b.style.display='block';});
+if(b)b.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;b.style.display='none';});
+window.addEventListener('appinstalled',()=>{if(b)b.style.display='none';});
+</script></body></html>
