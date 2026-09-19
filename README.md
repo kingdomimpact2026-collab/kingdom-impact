@@ -1,7 +1,9 @@
-# Kingdom Impact Technologies Inc. — Professional Installable PWA
+# Kingdom Impact Technologies Inc. — Professional PWA + AI Assistant
 
-This upgraded version adds a professional corporate layout, detailed service descriptions, a company/values section, a four-step process, improved contact/request experience, responsive mobile design, and PWA installation support.
+This version adds the Kingdom Impact AI Assistant interface.
 
-Client requests are submitted through FormSubmit to kingdomimpact2026@gmail.com. The first use may require FormSubmit email activation/confirmation.
+The assistant currently works without an API key and provides guided, company-specific responses about Kingdom Impact services. It is designed so a secure real AI backend can be connected later without exposing an API key in GitHub Pages.
 
-Host over HTTPS (GitHub Pages works).
+The existing email request form and WhatsApp contact remain available.
+
+Deploy these files to the existing GitHub Pages repository. Never put a private AI API key in index.html or any public GitHub file.
