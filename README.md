@@ -1,13 +1,21 @@
-KINGDOM IMPACT TECHNOLOGIES INC.
-Professional No-AI PWA
+# Kingdom Impact Technologies Inc. — Professional Website
 
-Upload all files in this folder to the root of your GitHub Pages repository.
-The site includes:
-- Professional responsive design
-- Mobile navigation
-- Services, Why Us, Process and Request sections
-- Email request form using FormSubmit
-- Phone and WhatsApp contact
-- Installable PWA
-- Offline shell
-- No AI/chatbot feature
+This package includes the exact background image supplied for the website hero section.
+
+Navigation included:
+- Home
+- About
+- Services
+- Impact
+- Contact
+
+Features:
+- Responsive mobile and desktop design
+- PWA install support
+- Offline service worker
+- Phone, WhatsApp and email contact links
+- Client request form
+- Navy, blue and gold Kingdom Impact branding
+
+## GitHub Pages
+Upload the files inside the `KingdomImpact-Professional-Hero-Update` folder to the root of your GitHub Pages repository and replace the old files.
