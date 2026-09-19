@@ -52,7 +52,7 @@ footer{background:#041637;color:#fff;padding:45px 0 20px}.footer-grid{display:gr
 <div class="topbar"><div class="wrap"><span>Innovative Technology for a Greater Impact</span><span>Ganta City, Nimba County • Liberia</span></div></div>
 <nav><div class="wrap nav">
 <a class="brand" href="#top"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact logo"><span><b>KINGDOM</b> <span>IMPACT</span><br>TECHNOLOGIES INC.</span></a>
-<div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#process">How We Work</a><a href="#ai-assistant">AI Assistant</a><a href="#request">Request a Solution</a><a class="navcta" href="https://wa.me/231778579741" target="_blank">WhatsApp</a></div>
+<div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#process">How We Work</a><a href="#ai-assistant"></a><a href="#request">Request a Solution</a><a class="navcta" href="https://wa.me/231778579741" target="_blank">WhatsApp</a></div>
 </div></nav>
 
 <main id="top">
@@ -101,18 +101,7 @@ footer{background:#041637;color:#fff;padding:45px 0 20px}.footer-grid{display:gr
 </div></div></section>
 
 
-<section id="ai-assistant" class="ai-section"><div class="wrap">
-<div class="section-head"><div class="kicker">Kingdom Impact AI Assistant</div><h2>Get help choosing the right technology solution.</h2><p>Ask about our services, explain your business challenge, or describe an idea. The assistant can guide you to the next step.</p></div>
-<div class="ai-layout">
-<div class="ai-intro"><div class="ai-badge">✦ KINGDOM IMPACT AI</div><h2>Your technology conversation starts here.</h2>
-<p>Use the assistant before contacting our team. It can explain our services, help you describe your project, and direct you to our request form.</p>
-<ul class="ai-points"><li>Understand which service may fit your need</li><li>Explain technology in simple language</li><li>Turn an idea into a clearer project request</li><li>Connect you with our team when you're ready</li></ul>
-<a class="btn secondary" href="#request">Submit a Project Request →</a></div>
-<div class="chatbox"><div class="chat-head"><div class="ai-avatar">KI</div><div><strong>Kingdom Impact AI Assistant</strong><span>Online • Technology guidance</span></div></div>
-<div id="chatMessages" class="chat-messages" aria-live="polite"></div>
-<div class="quick" id="quickActions"><button data-q="What services do you offer?">Our services</button><button data-q="I need a website">I need a website</button><button data-q="I need software">I need software</button><button data-q="I need IT support">I need IT support</button><button data-q="I need a database">I need a database</button><button data-q="I have a business idea">I have an idea</button></div>
-<form class="chat-input" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Ask about your technology need..."><button class="btn primary" type="submit">Send</button></form>
-<div class="ai-note">This assistant provides general guidance about Kingdom Impact services. A member of our team can review your request for project-specific advice.</div></div></div></div></section>
+
 <section id="request" style="background:#edf3fb"><div class="wrap request-wrap">
 <div class="request-info"><div class="kicker" style="color:#ffd84a">Start here</div><h2>Request a technology solution.</h2><p>Complete the short form. Your request will be sent to our business email for review.</p>
 <div class="mini"><span>✉</span><div><b>Email</b><span>kingdomimpact2026@gmail.com</span></div></div>
@@ -143,32 +132,7 @@ footer{background:#041637;color:#fff;padding:45px 0 20px}.footer-grid{display:gr
 </div><div class="copyright"><span>© 2026 Kingdom Impact Technologies Inc.</span><span>INNOVATION / TECHNOLOGY / IMPACT</span></div></div></footer>
 
 <button id="installAppBtn" class="install" type="button" style="display:none">📲 Install App</button>
-<script>
-if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
-let deferredPrompt;const b=document.getElementById('installAppBtn');
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;if(b)b.style.display='block';});
-if(b)b.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;b.style.display='none';});
-window.addEventListener('appinstalled',()=>{if(b)b.style.display='none';});
-</script>
 
-<script>
-(function(){
-const box=document.getElementById('chatMessages'),form=document.getElementById('chatForm'),input=document.getElementById('chatInput'),quick=document.getElementById('quickActions');if(!box||!form)return;
-function add(text,who='ai'){const row=document.createElement('div');row.className='msg '+(who==='user'?'user':'ai');const b=document.createElement('div');b.className='bubble';b.textContent=text;row.appendChild(b);box.appendChild(row);box.scrollTop=box.scrollHeight}
-function answer(q){const s=q.toLowerCase();
-if(s.includes('service')||s.includes('offer')||s.includes('what do you do'))return 'Kingdom Impact Technologies Inc. offers:\\n\\n• Software Development\\n• Web Design & Development\\n• IT Support & Networking\\n• Database Solutions\\n• Training & Consulting\\n• Professional Technology Support\\n\\nTell me what you are trying to accomplish and I can help you identify where to start.';
-if(s.includes('website')||s.includes('web'))return 'For a website, we can help with planning, design, responsive pages, business information, contact/request forms and ongoing support.\\n\\nWhat is the website for, and what would you like customers to do on it?';
-if(s.includes('software')||s.includes('app')||s.includes('application'))return 'Software Development is suitable when you need a custom system or application for a specific workflow.\\n\\nWhat do you want the software to help you manage?';
-if(s.includes('it support')||s.includes('network')||s.includes('computer')||s.includes('wifi'))return 'Our IT Support & Networking service covers troubleshooting, computer and software support, network setup/management and maintenance.\\n\\nTell me what problem you are experiencing.';
-if(s.includes('database')||s.includes('data'))return 'Database Solutions can help you organize, store and manage business information. We can assist with database design, setup, data organization/migration and support.\\n\\nWhat information do you need to store or manage?';
-if(s.includes('training')||s.includes('learn')||s.includes('consult'))return 'Training & Consulting is designed for people and teams who want practical technology skills or guidance.\\n\\nWhat would you or your team like to learn or improve?';
-if(s.includes('idea')||s.includes('business'))return 'Great. Start with the problem, not the technology. Tell me:\\n1. What does your business do?\\n2. What problem are you trying to solve?\\n3. Who will use the solution?\\n\\nI can help turn your answers into a clearer project request.';
-if(s.includes('price')||s.includes('cost')||s.includes('how much'))return 'Project pricing depends on the scope and requirements. Submit a request with what you need so our team can review the details and discuss the appropriate solution.';
-if(s.includes('contact')||s.includes('call')||s.includes('email'))return 'You can reach Kingdom Impact Technologies Inc. at 0778579741 or 0880233332, email kingdomimpact2026@gmail.com, or submit the project request on this page.';
-return 'I can help with Kingdom Impact services, websites, software, IT support, databases, training, or a new technology idea.\\n\\nTry: “I need a website for my business” or “I want a system to manage customers.”'}
-function ask(q){if(!q.trim())return;add(q,'user');setTimeout(()=>add(answer(q),'ai'),220)}
-add('👋 Welcome to Kingdom Impact Technologies Inc.\\n\\nI’m your technology assistant. Tell me what you need, and I’ll help you identify a practical next step.')
-form.addEventListener('submit',e=>{e.preventDefault();const q=input.value;input.value='';ask(q)});quick.addEventListener('click',e=>{if(e.target.matches('button'))ask(e.target.dataset.q)})
-})();
-</script>
+
+
 </body></html>
