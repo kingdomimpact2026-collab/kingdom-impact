@@ -4,9 +4,9 @@
   "start_url":"./",
   "scope":"./",
   "display":"standalone",
-  "background_color":"#f6f9fd",
+  "background_color":"#061633",
   "theme_color":"#071d49",
-  "description":"Professional technology services from Kingdom Impact Technologies Inc.",
+  "description":"Kingdom Impact Technologies Inc. — Innovative Technology for a Greater Impact.",
   "icons":[
     {"src":"kingdom-impact-icon.png","sizes":"512x512","type":"image/png","purpose":"any maskable"},
     {"src":"kingdom-impact-logo.jpg","sizes":"512x512","type":"image/jpeg","purpose":"any"}
