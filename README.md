@@ -1,6 +1,6 @@
 # Kingdom Impact Technologies Inc. — Professional PWA (No AI)
 
-This version removes the AI Assistant from the website.
+
 
 Included:
 - Professional corporate website
