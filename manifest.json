@@ -6,14 +6,20 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#061b45",
+  "theme_color": "#071d49",
   "background_color": "#ffffff",
   "icons": [
+    {
+      "src": "kingdom-impact-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
     {
       "src": "kingdom-impact-logo.jpg",
       "sizes": "512x512",
       "type": "image/jpeg",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
