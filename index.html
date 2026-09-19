@@ -1,73 +1,118 @@
 <!doctype html>
 <html lang="en">
-<head><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b1f3a"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="kingdom-impact-logo.jpg">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kingdom Impact Technologies Inc.</title>
-<meta name="description" content="Kingdom Impact Technologies Inc. — your technology partner for a brighter future.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kingdom Impact Technologies Inc. | Technology Partner</title>
+<meta name="description" content="Kingdom Impact Technologies Inc. provides software development, web design, IT support and networking, database solutions, and technology training and consulting in Liberia.">
+<meta name="theme-color" content="#061b45">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="kingdom-impact-logo.jpg">
 <style>
-:root{--blue:#063a91;--blue2:#0b63ce;--gold:#f4c20d;--ink:#10234b;--muted:#5e6b82;--bg:#f7faff}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
-a{text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:0 18px}
-nav{background:#fff;border-bottom:1px solid #e5ebf5;position:sticky;top:0;z-index:5}.nav{height:68px;display:flex;align-items:center;justify-content:space-between}
-.brand{font-weight:900;color:var(--blue);font-size:18px}.brand span{color:#dca600}.links{display:flex;gap:18px;font-size:14px;font-weight:700}
-.hero{padding:58px 0;background:radial-gradient(circle at 85% 15%,#e7f1ff,transparent 38%),linear-gradient(135deg,#fff,#eef5ff)}
-.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.eyebrow{color:var(--blue2);font-weight:800;text-transform:uppercase;letter-spacing:2px}
-h1{font-size:52px;line-height:1.03;margin:12px 0}h1 span{color:#e4aa00}.lead{font-size:19px;line-height:1.6;color:var(--muted)}
-.buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;border-radius:12px;padding:14px 18px;font-weight:800}.primary{background:var(--blue);color:#fff}.gold{background:var(--gold);color:#082d78}
-.hero-card{background:#fff;border:1px solid #e0e8f5;border-radius:22px;padding:25px;box-shadow:0 18px 55px #123b7518}.phone{font-size:30px;font-weight:900;color:var(--blue)}
-section{padding:58px 0}h2{font-size:34px;margin:0 0 10px}.sub{color:var(--muted);line-height:1.55}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.card{background:#fff;border:1px solid #e0e8f5;border-radius:17px;padding:21px}.num{width:44px;height:44px;border-radius:12px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-weight:900}.card h3{margin:12px 0 7px}.card p{color:var(--muted);line-height:1.45}
-.request{background:#fff;border:1px solid #e0e8f5;border-radius:20px;padding:25px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}label{font-weight:800;font-size:13px}input,select,textarea{font:inherit;border:1px solid #cbd7e8;border-radius:10px;padding:12px}textarea{min-height:120px}
-footer{background:#061f57;color:#fff;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{font-size:13px;color:#c9d7ef}
-@media(max-width:760px){.grid,.fields{grid-template-columns:1fr}.services{grid-template-columns:1fr}.links{display:none}h1{font-size:40px}}
+:root{--navy:#061b45;--blue:#0757c8;--gold:#f5b800;--ink:#10203d;--muted:#5d6b83;--bg:#f6f9ff;--card:#fff;--line:#dfe7f3;--shadow:0 18px 50px rgba(8,35,85,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy)}.brand img{width:48px;height:48px;object-fit:cover;border-radius:12px}.brand span{font-size:14px;line-height:1.05}.brand small{display:block;color:var(--blue);font-weight:700;margin-top:3px}
+.navlinks{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:800}.navlinks a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 19px;border-radius:12px;font-weight:900;border:1px solid transparent;cursor:pointer;transition:.2s}.btn-primary{background:var(--blue);color:white;box-shadow:0 10px 25px rgba(7,87,200,.22)}.btn-primary:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{border-color:#b9c8df;background:#fff;color:var(--navy)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#061b45 0%,#0b3f94 62%,#0873d8 100%);color:#fff;padding:76px 0 70px}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.18}.hero:before{width:420px;height:420px;background:var(--gold);right:-150px;top:-180px}.hero:after{width:320px;height:320px;background:#fff;left:-160px;bottom:-190px}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:46px;align-items:center}.eyebrow{display:inline-flex;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:7px 12px;border-radius:999px;font-weight:800;font-size:13px}.hero h1{font-size:clamp(38px,6vw,70px);line-height:1.02;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;color:#dce8ff;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.hero .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:24px;padding:25px;box-shadow:0 30px 80px rgba(0,0,0,.2)}.hero-card img{width:100%;max-height:300px;object-fit:contain;border-radius:16px;background:#fff}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.mini{padding:13px;border-radius:14px;background:rgba(255,255,255,.09);font-size:13px}.mini b{display:block;color:#fff}.mini span{color:#cbdcff}
+.install{display:none;margin:0 0 24px}.install.show{display:inline-flex}
+section{padding:75px 0}.section-head{text-align:center;max-width:760px;margin:0 auto 38px}.section-head .tag{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:12px}.section-head h2{font-size:clamp(30px,4vw,44px);margin:8px 0 10px;color:var(--navy)}.section-head p{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:var(--shadow);transition:.2s}.service:hover{transform:translateY(-4px);border-color:#b9cef0}.icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:#eaf2ff;color:var(--blue);font-size:25px;margin-bottom:15px}.service h3{margin:0 0 8px;color:var(--navy)}.service p{color:var(--muted);margin:0 0 13px}.service ul{padding:0;margin:0;list-style:none;color:#35445d;font-size:14px}.service li{margin:6px 0}.service li:before{content:"✓";color:#d69c00;font-weight:900;margin-right:8px}
+.band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{padding:20px;border-radius:18px;background:#f8fbff;border:1px solid var(--line)}.num{color:var(--blue);font-weight:1000;font-size:13px}.step h3{margin:6px 0}.step p{margin:0;color:var(--muted);font-size:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:25px}.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}.panel h3{color:var(--navy);margin-top:0}.checks{display:grid;gap:11px}.check{display:flex;gap:10px;align-items:flex-start}.check b{color:var(--blue)}
+.contact{background:linear-gradient(135deg,#061b45,#0b438f);color:#fff;border-radius:28px;padding:45px}.contact h2{font-size:38px;margin:0 0 10px}.contact p{color:#dce8ff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}.contact-list{display:grid;gap:12px}.contact-item{display:flex;gap:12px;align-items:center}.contact-item strong{display:block}.contact-item span{color:#c8d9f7;font-size:14px}
+form{display:grid;gap:12px}input,select,textarea{width:100%;padding:14px;border:1px solid #cfd9e8;border-radius:12px;font:inherit;background:#fff}textarea{min-height:130px;resize:vertical}.form-note{font-size:12px;color:#6d7b91}
+footer{padding:35px 0;background:#031331;color:#c7d6ef}footer .foot{display:flex;justify-content:space-between;gap:20px;align-items:center}footer b{color:#fff}.social{color:#fff;font-weight:800}
+@media(max-width:850px){.navlinks{display:none}.hero-grid,.two,.contact-grid{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.hero{padding:55px 0}.hero-card{order:-1}}
+@media(max-width:560px){.wrap{padding:0 15px}.services,.process{grid-template-columns:1fr}.hero h1{font-size:43px}.hero p{font-size:16px}.btn{width:100%}.hero-actions{display:grid}.nav{height:68px}.brand span{font-size:12px}}
 </style>
 </head>
-<body><button id="installAppBtn" type="button" style="display:none;margin:10px auto;padding:12px 18px;border:0;border-radius:999px;background:#d4a72c;color:#0b1f3a;font-weight:700;cursor:pointer">📲 Install Kingdom Impact App</button>
-<nav><div class="wrap nav"><div class="brand"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact Technologies Inc. logo" style="height:42px;vertical-align:middle;margin-right:8px;border-radius:6px">KINGDOM <span>IMPACT</span> TECHNOLOGIES INC.</div>
-<div class="links"><a href="#services">Services</a><a href="#request">Request a Solution</a><a href="https://wa.me/231778579741" target="_blank">WhatsApp</a></div></div></nav>
-
-<header class="hero"><div class="wrap grid">
-<div><div class="eyebrow">Your Technology Partner</div><h1>Build solutions that <span>work for you.</span></h1>
-<p class="lead">Tell us the technology problem your business is facing. We help turn your idea into a practical solution.</p>
-<div class="buttons"><a class="btn primary" href="#request">Start a Project</a><a class="btn gold" href="https://wa.me/231778579741" target="_blank">WhatsApp Us</a></div></div>
-<div class="hero-card"><div class="eyebrow">Call today</div><p class="phone">0778579741</p><p class="phone">0880233332</p><p>kingdomimpact2026@gmail.com<br>Ganta City, Nimba County</p><p class="sub">Have an idea but don't know what technology you need? Tell us what you need and we'll help you identify the next step.</p></div>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#top"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact logo"><span>KINGDOM IMPACT<small>TECHNOLOGIES INC.</small></span></a>
+<nav class="navlinks"><a href="#services">Services</a><a href="#process">How It Works</a><a href="#about">Why Us</a><a href="#contact">Contact</a></nav>
+<button class="btn btn-gold" id="installAppBtn" style="display:none">📲 Install App</button>
 </div></header>
 
-<section id="services"><div class="wrap"><h2>Our Services</h2><p class="sub">Choose the service that matches your need—or simply tell us the problem.</p>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="eyebrow">INNOVATIVE TECHNOLOGY FOR A GREATER IMPACT</div>
+<h1>Your <span>Technology Partner</span> for a Brighter Future.</h1>
+<p>We help individuals, businesses and organizations turn technology challenges into practical, reliable solutions—from software and websites to databases, IT support and professional training.</p>
+<div class="hero-actions"><a class="btn btn-gold" href="#contact">Start a Project →</a><a class="btn btn-outline" href="https://wa.me/231778579741?text=Hello%20Kingdom%20Impact%20Technologies%20Inc.%2C%20I%20would%20like%20to%20discuss%20a%20technology%20solution." target="_blank" rel="noopener">💬 WhatsApp Us</a></div>
+</div>
+<div class="hero-card"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact Technologies Inc."><div class="mini-grid"><div class="mini"><b>Practical Solutions</b><span>Built around your real needs.</span></div><div class="mini"><b>Professional Support</b><span>Guidance from idea to delivery.</span></div><div class="mini"><b>Business Focused</b><span>Technology that supports growth.</span></div><div class="mini"><b>Long-Term Partnership</b><span>Support beyond launch.</span></div></div></div>
+</div></section>
+
+<section id="services"><div class="wrap"><div class="section-head"><div class="tag">What We Do</div><h2>Technology services built around your needs</h2><p>Choose a service or tell us the problem you're facing. We'll help you identify the right next step.</p></div>
 <div class="services">
-<div class="card"><div class="num">01</div><h3>Software Development</h3><p>Custom business software and applications.</p></div>
-<div class="card"><div class="num">02</div><h3>Web Design & Development</h3><p>Professional websites for businesses and organizations.</p></div>
-<div class="card"><div class="num">03</div><h3>IT Support & Networking</h3><p>Technology setup, troubleshooting and networking support.</p></div>
-<div class="card"><div class="num">04</div><h3>Database Solutions</h3><p>Organize, manage and protect business information.</p></div>
-<div class="card"><div class="num">05</div><h3>Training & Consulting</h3><p>Practical technology training and guidance.</p></div>
-<div class="card"><div class="num">06</div><h3>Experienced Team</h3><p>Technology professionals focused on practical results.</p></div>
+<article class="service"><div class="icon">💻</div><h3>Software Development</h3><p>Custom software designed around the way your business operates.</p><ul><li>Business management systems</li><li>Custom web & mobile applications</li><li>Workflow and process automation</li><li>System improvements and maintenance</li></ul></article>
+<article class="service"><div class="icon">🌐</div><h3>Web Design & Development</h3><p>Professional, responsive websites that present your organization clearly online.</p><ul><li>Business & organization websites</li><li>Landing pages and portfolios</li><li>Online service pages</li><li>Mobile-friendly website design</li></ul></article>
+<article class="service"><div class="icon">🖧</div><h3>IT Support & Networking</h3><p>Reliable technical support to keep your computers, devices and networks working smoothly.</p><ul><li>Network setup and configuration</li><li>Computer and software troubleshooting</li><li>Device setup and maintenance</li><li>On-site and remote technical assistance</li></ul></article>
+<article class="service"><div class="icon">🗄️</div><h3>Database Solutions</h3><p>Structured data solutions that help your organization manage information efficiently.</p><ul><li>Database design and setup</li><li>Data organization and migration</li><li>Reporting and information management</li><li>Database maintenance and support</li></ul></article>
+<article class="service"><div class="icon">🎓</div><h3>Training & Consulting</h3><p>Practical guidance that helps people and organizations use technology with confidence.</p><ul><li>IT and digital skills training</li><li>Business technology guidance</li><li>System user training</li><li>Technology planning and consulting</li></ul></article>
+<article class="service"><div class="icon">🤝</div><h3>Professional Technology Support</h3><p>A dependable technology partner for planning, implementation and ongoing assistance.</p><ul><li>Technology needs assessment</li><li>Solution planning</li><li>Implementation support</li><li>Ongoing technical assistance</li></ul></article>
 </div></div></section>
 
-<section id="request"><div class="wrap grid"><div><h2>Tell us what you need</h2><p class="sub">No technical language is required. Describe your problem in your own words and send it to us.</p>
-<div class="buttons"><a class="btn gold" href="tel:+231778579741">Call 0778579741</a><a class="btn primary" href="https://wa.me/231778579741" target="_blank">Chat on WhatsApp</a></div></div>
-<form class="request" id="form"><div class="fields">
-<div class="field"><label>Your name</label><input id="name" required></div>
-<div class="field"><label>Business / organization</label><input id="business"></div>
-<div class="field"><label>Phone / WhatsApp</label><input id="phone" required></div>
-<div class="field"><label>Email</label><input id="email" type="email"></div>
-<div class="field full"><label>Service</label><select id="service"><option>Not sure — help me choose</option><option>Software Development</option><option>Web Design & Development</option><option>IT Support & Networking</option><option>Database Solutions</option><option>Training & Consulting</option><option>Experienced Team</option></select></div>
-<div class="field full"><label>What do you need?</label><textarea id="problem" required placeholder="Example: I need a system to track customers and payments."></textarea></div>
-</div><div class="buttons"><button class="btn primary" type="submit">Send Request on WhatsApp</button></div></form></div></section>
+<section class="band" id="process"><div class="wrap"><div class="section-head"><div class="tag">Simple Process</div><h2>From problem to practical solution</h2><p>You don't need technical language. Tell us what you need and we'll guide you through the process.</p></div>
+<div class="process"><div class="step"><div class="num">01 — DISCOVER</div><h3>Tell us the challenge</h3><p>Describe what isn't working or what you want to achieve.</p></div><div class="step"><div class="num">02 — PLAN</div><h3>We define the solution</h3><p>We clarify requirements, scope and the best technology approach.</p></div><div class="step"><div class="num">03 — BUILD</div><h3>We develop & test</h3><p>We create the solution, test it and make improvements.</p></div><div class="step"><div class="num">04 — SUPPORT</div><h3>We stay with you</h3><p>We provide guidance and ongoing support after delivery.</p></div></div></div></section>
 
-<footer><div class="wrap foot"><div><strong>KINGDOM IMPACT TECHNOLOGIES INC.</strong><div class="small">Innovative Technology for a Greater Impact.</div></div><div class="small">0778579741 / 0880233332<br>kingdomimpact2026@gmail.com<br>Ganta City, Nimba County</div></div></footer>
+<section id="about"><div class="wrap"><div class="two">
+<div class="panel"><h3>Why work with Kingdom Impact?</h3><div class="checks">
+<div class="check">✓ <div><b>Professional & Reliable</b><br>Clear communication and practical delivery.</div></div>
+<div class="check">✓ <div><b>Affordable Approach</b><br>Solutions designed around your needs and available resources.</div></div>
+<div class="check">✓ <div><b>Customer Focus</b><br>Your goals guide the solution from start to finish.</div></div>
+<div class="check">✓ <div><b>Modern & Practical</b><br>We focus on useful technology, not unnecessary complexity.</div></div>
+<div class="check">✓ <div><b>Long-Term Support</b><br>Help doesn't have to stop when the project is delivered.</div></div>
+</div></div>
+<div class="panel"><h3>Who we serve</h3><p>Our services can support:</p><div class="checks">
+<div class="check">🏢 <div><b>Small & Growing Businesses</b><br>Websites, software, databases and IT support.</div></div>
+<div class="check">🏫 <div><b>Schools & Training Organizations</b><br>Web presence, systems and technology training.</div></div>
+<div class="check">🏛️ <div><b>Organizations & Institutions</b><br>Technology planning, information systems and support.</div></div>
+<div class="check">👤 <div><b>Individuals & Entrepreneurs</b><br>Personal projects, websites and technology guidance.</div></div>
+</div></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact"><div class="contact-grid">
+<div><div class="tag" style="color:#f5b800">LET'S BUILD SOMETHING USEFUL</div><h2>Have a technology need?</h2><p>Tell us what you want to build, improve or fix. No technical language required.</p><div class="contact-list">
+<div class="contact-item">📞 <div><strong>0778579741 / 0880233332</strong><span>Call or WhatsApp</span></div></div>
+<div class="contact-item">✉️ <div><strong>kingdomimpact2026@gmail.com</strong><span>Email us your request</span></div></div>
+<div class="contact-item">📍 <div><strong>Ganta City, Nimba County, Liberia</strong><span>Kingdom Impact Technologies Inc.</span></div></div>
+</div></div>
+<div class="panel" style="color:var(--ink)">
+<h3>Request a Solution</h3>
+<form id="requestForm">
+<input name="name" placeholder="Your name" required>
+<input name="business" placeholder="Business / organization">
+<input name="phone" placeholder="Phone / WhatsApp" required>
+<input name="email" type="email" placeholder="Email">
+<select name="service"><option>Software Development</option><option>Web Design & Development</option><option>IT Support & Networking</option><option>Database Solutions</option><option>Training & Consulting</option><option>Not sure — help me choose</option></select>
+<textarea name="problem" placeholder="Tell us what you need or what problem you want to solve..." required></textarea>
+<button class="btn btn-primary" type="submit">Send Request on WhatsApp →</button>
+<div class="form-note">Your request opens WhatsApp with the information you entered so our team can respond.</div>
+</form></div>
+</div></div></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><b>KINGDOM IMPACT TECHNOLOGIES INC.</b><br>Innovative Technology for a Greater Impact.</div><div class="social">Build • Innovate • Grow</div></div></footer>
+
 <script>
-document.getElementById('form').addEventListener('submit',function(e){
- e.preventDefault();
- const msg = `Hello Kingdom Impact Technologies!%0A%0AName: ${encodeURIComponent(document.getElementById('name').value)}%0ABusiness: ${encodeURIComponent(document.getElementById('business').value)}%0APhone: ${encodeURIComponent(document.getElementById('phone').value)}%0AService: ${encodeURIComponent(document.getElementById('service').value)}%0A%0ANeed: ${encodeURIComponent(document.getElementById('problem').value)}`;
+let deferredPrompt;
+const installBtn=document.getElementById('installAppBtn');
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;installBtn.style.display='inline-flex';});
+installBtn.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;installBtn.style.display='none';});
+if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+document.getElementById('requestForm').addEventListener('submit',function(e){
+ e.preventDefault(); const f=new FormData(this);
+ const msg=`Hello Kingdom Impact Technologies Inc.%0A%0AName: ${encodeURIComponent(f.get('name'))}%0ABusiness/Organization: ${encodeURIComponent(f.get('business'))}%0APhone/WhatsApp: ${encodeURIComponent(f.get('phone'))}%0AEmail: ${encodeURIComponent(f.get('email'))}%0AService: ${encodeURIComponent(f.get('service'))}%0A%0AWhat I need:%0A${encodeURIComponent(f.get('problem'))}`;
  window.open('https://wa.me/231778579741?text='+msg,'_blank');
 });
 </script>
-<script>
-if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
-let deferredPrompt;
-const b=document.getElementById('installAppBtn');
-window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;if(b)b.style.display='block';});
-if(b)b.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;b.style.display='none';});
-window.addEventListener('appinstalled',()=>{if(b)b.style.display='none';});
-</script></body></html>
+</body></html>
