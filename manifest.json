@@ -1,25 +1,14 @@
 {
-  "name": "Kingdom Impact Technologies Inc.",
-  "short_name": "Kingdom Impact",
-  "description": "Innovative Technology for a Greater Impact.",
-  "start_url": "./",
-  "scope": "./",
-  "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#071d49",
-  "background_color": "#ffffff",
-  "icons": [
-    {
-      "src": "kingdom-impact-icon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "kingdom-impact-logo.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg",
-      "purpose": "any"
-    }
+  "name":"Kingdom Impact Technologies Inc.",
+  "short_name":"Kingdom Impact",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#f6f9fd",
+  "theme_color":"#071d49",
+  "description":"Professional technology services from Kingdom Impact Technologies Inc.",
+  "icons":[
+    {"src":"kingdom-impact-icon.png","sizes":"512x512","type":"image/png","purpose":"any maskable"},
+    {"src":"kingdom-impact-logo.jpg","sizes":"512x512","type":"image/jpeg","purpose":"any"}
   ]
 }

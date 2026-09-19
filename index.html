@@ -2,91 +2,151 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kingdom Impact Technologies Inc. | Innovative Technology for a Greater Impact</title>
-<meta name="description" content="Kingdom Impact Technologies Inc. provides software development, web design, IT support and networking, database solutions, training and consulting in Liberia.">
-<link rel="manifest" href="manifest.json">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kingdom Impact Technologies Inc. | Technology for a Greater Impact</title>
+<meta name="description" content="Professional technology services in Liberia — software development, web design, IT support, networking, database solutions, training and consulting.">
 <meta name="theme-color" content="#071d49">
-<meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="kingdom-impact-icon.png">
 <link rel="apple-touch-icon" href="kingdom-impact-icon.png">
 <style>
-:root{--navy:#071d49;--blue:#0a57c7;--blue2:#1478e8;--gold:#f5bd17;--gold2:#ffd84a;--ink:#0b1f45;--muted:#60708d;--line:#dfe8f5;--bg:#f5f8fc;--white:#fff;--shadow:0 18px 55px rgba(7,29,73,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}a{text-decoration:none;color:inherit}.wrap{max-width:1160px;margin:auto;padding:0 20px}
-.topbar{background:var(--navy);color:#dce8ff;font-size:13px}.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 20px}.topbar a{font-weight:700;color:#fff}
-nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:950;color:var(--navy);font-size:15px}.brand img{width:50px;height:50px;object-fit:cover;border-radius:12px}.brand b{color:var(--blue)}.brand span{color:#d99f00}.links{display:flex;align-items:center;gap:22px;font-size:14px;font-weight:800}.links a:hover{color:var(--blue)}.navcta{background:var(--blue);color:#fff!important;padding:11px 16px;border-radius:12px}
-.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 15%,#dcecff 0,transparent 35%),linear-gradient(135deg,#fff 0%,#f2f7ff 60%,#eaf2ff 100%);padding:78px 0 70px}.hero:after{content:"";position:absolute;right:-120px;bottom:-180px;width:430px;height:430px;border:80px solid rgba(245,189,23,.16);border-radius:50%}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:45px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:900;letter-spacing:1.7px;text-transform:uppercase;font-size:12px}.eyebrow:before{content:"";width:28px;height:3px;background:var(--gold);border-radius:3px}h1{font-size:clamp(42px,6vw,70px);line-height:1.02;letter-spacing:-2.5px;margin:16px 0}h1 span{color:var(--blue)}.lead{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:13px;padding:14px 19px;font-weight:900;cursor:pointer;font-size:14px}.primary{background:var(--navy);color:#fff;box-shadow:0 10px 25px rgba(7,29,73,.18)}.secondary{background:var(--gold);color:var(--navy)}.outline{border:1px solid #c9d7eb;background:#fff;color:var(--navy)}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:24px}.trust div{font-size:13px;color:var(--muted);font-weight:700}.trust strong{display:block;color:var(--navy);font-size:16px}
-.hero-panel{background:linear-gradient(160deg,#071d49,#0b4ea9);border-radius:28px;padding:28px;color:#fff;box-shadow:0 25px 70px rgba(7,29,73,.24);position:relative;overflow:hidden}.hero-panel:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-60px;background:rgba(245,189,23,.2)}.hero-logo{background:#fff;border-radius:18px;padding:14px;display:inline-block}.hero-logo img{width:180px;height:126px;object-fit:contain;display:block}.hero-panel h3{font-size:25px;margin:20px 0 8px}.hero-panel p{color:#d9e6ff}.contact-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.contact-chip{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:12px;font-size:13px}.contact-chip strong{display:block;color:#fff;margin-bottom:3px}
-section{padding:78px 0}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.1;margin:8px 0 12px;letter-spacing:-1px}.section-head p{color:var(--muted);font-size:17px}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 8px 25px rgba(7,29,73,.04);transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.icon{width:52px;height:52px;border-radius:15px;background:#eaf2ff;color:var(--blue);display:grid;place-items:center;font-weight:950;font-size:16px}.card h3{font-size:19px;margin:16px 0 8px}.card p{color:var(--muted);margin:0 0 13px}.card ul{padding:0;margin:0;list-style:none;color:#334a6e;font-size:14px}.card li{margin:6px 0}.card li:before{content:"✓";color:#d99f00;font-weight:950;margin-right:8px}
-.band{background:var(--navy);color:#fff}.band .section-head p{color:#bfd0ee}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.benefit{padding:20px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.06);border-radius:16px}.benefit strong{display:block;margin-bottom:5px}.benefit span{color:#bfd0ee;font-size:14px}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.step-num{font-weight:950;color:var(--blue);font-size:13px}.step h3{margin:7px 0}.step p{margin:0;color:var(--muted);font-size:14px}
-.request-wrap{display:grid;grid-template-columns:.78fr 1.22fr;gap:25px;align-items:start}.request-info{background:linear-gradient(145deg,#071d49,#0a57c7);color:#fff;border-radius:24px;padding:30px;position:sticky;top:100px}.request-info h2{font-size:34px;line-height:1.1;margin:0 0 12px}.request-info p{color:#d4e1f8}.mini{display:flex;gap:12px;align-items:flex-start;margin:18px 0}.mini b{display:block}.mini span{font-size:13px;color:#c4d5ef}.request{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.full{grid-column:1/-1}label{font-size:13px;font-weight:850}input,select,textarea{width:100%;font:inherit;border:1px solid #cbd8ea;border-radius:12px;padding:13px 14px;outline:none;background:#fbfdff}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(10,87,199,.1)}textarea{min-height:135px;resize:vertical}.submit-row{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:18px}.small{font-size:12px;color:var(--muted)}
-.install{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--gold);color:var(--navy);border:0;border-radius:999px;padding:13px 18px;font-weight:950;box-shadow:0 14px 35px rgba(7,29,73,.2);cursor:pointer}
-footer{background:#041637;color:#fff;padding:45px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}.footer-title{font-weight:950;font-size:16px;margin-bottom:8px}.footer-text{color:#b9c9e5;font-size:14px}.footer-links a{display:block;color:#dce7fa;font-size:14px;margin:7px 0}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding-top:18px;color:#91a8cc;font-size:12px;display:flex;justify-content:space-between;gap:15px}
-
-.ai-section{background:linear-gradient(180deg,#f7faff 0%,#edf4ff 100%)}
-.ai-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:24px;align-items:start}
-.ai-intro{background:linear-gradient(145deg,#071d49,#0a57c7);color:#fff;border-radius:24px;padding:30px;box-shadow:var(--shadow)}
-.ai-intro h2{font-size:36px;line-height:1.08;margin:8px 0 12px}.ai-intro p{color:#d5e3fa}
-.ai-badge{display:inline-flex;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:8px 11px;border-radius:999px;font-size:12px;font-weight:900}
-.ai-points{list-style:none;padding:0;margin:22px 0}.ai-points li{margin:12px 0;color:#e4edfb}.ai-points li:before{content:"✓";color:#ffd84a;font-weight:950;margin-right:9px}
-.chatbox{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
-.chat-head{background:#fff;border-bottom:1px solid var(--line);padding:17px 20px;display:flex;align-items:center;gap:12px}
-.ai-avatar{width:42px;height:42px;border-radius:14px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-weight:950}
-.chat-head strong{display:block}.chat-head span{font-size:12px;color:#6c7b96}
-.chat-messages{height:390px;overflow:auto;padding:20px;background:#f7faff}.msg{display:flex;margin:10px 0}.msg.user{justify-content:flex-end}
-.bubble{max-width:82%;padding:12px 14px;border-radius:16px;background:#fff;border:1px solid #e2eaf5;color:#263b5e;font-size:14px;white-space:pre-line}
-.msg.user .bubble{background:var(--blue);color:#fff;border-color:var(--blue);border-bottom-right-radius:5px}.msg.ai .bubble{border-bottom-left-radius:5px}
-.quick{display:flex;gap:8px;flex-wrap:wrap;padding:12px 14px;border-top:1px solid var(--line)}
-.quick button{border:1px solid #cbd8ea;background:#fff;color:var(--navy);padding:9px 11px;border-radius:999px;font-size:12px;font-weight:800;cursor:pointer}
-.quick button:hover{border-color:var(--blue);color:var(--blue)}
-.chat-input{display:flex;gap:8px;padding:14px;border-top:1px solid var(--line);background:#fff}.chat-input input{flex:1;margin:0}
-.chat-input button{white-space:nowrap}.ai-note{padding:10px 15px;font-size:11px;color:#71819c;background:#fff;border-top:1px solid var(--line)}
-@media(max-width:850px){.ai-layout{grid-template-columns:1fr}}
-@media(max-width:850px){.links a:not(.navcta){display:none}.hero-grid,.request-wrap{grid-template-columns:1fr}.services{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.request-info{position:static}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.topbar .wrap{display:none}.nav{min-height:68px}.brand{font-size:12px}.brand img{width:43px;height:43px}.hero{padding:55px 0}.hero-grid{gap:25px}h1{letter-spacing:-1.5px}.services,.benefits,.steps,.fields{grid-template-columns:1fr}.contact-row{grid-template-columns:1fr}.hero-logo img{width:150px;height:105px}.actions .btn{width:100%}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column}}
+:root{--navy:#071d49;--navy2:#0b2d6b;--blue:#1264d8;--blue2:#2b8cff;--gold:#f5bd17;--gold2:#ffd85a;--ink:#0b1830;--muted:#61708a;--line:#e2e9f3;--bg:#f6f9fd;--white:#fff;--shadow:0 24px 70px rgba(7,29,73,.12);--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}
+.top{background:var(--navy);color:#dce8ff;font-size:13px}.top .wrap{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:12px}.top a{font-weight:800;color:#fff}.top .right{display:flex;gap:18px}
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(226,233,243,.85)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:950;color:var(--navy);min-width:0}.brand img{width:50px;height:50px;border-radius:14px;object-fit:cover;box-shadow:0 8px 20px rgba(7,29,73,.12)}.brand-text{line-height:1.05;font-size:14px}.brand-text small{display:block;color:var(--muted);font-size:9px;letter-spacing:1.2px;margin-top:5px;text-transform:uppercase}.links{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:800}.links a{color:#243653}.links a:hover{color:var(--blue)}.nav-btn{background:var(--navy);color:#fff!important;padding:11px 16px;border-radius:12px}.menu{display:none;border:0;background:#eef4fc;color:var(--navy);width:44px;height:44px;border-radius:12px;font-size:22px}
+.hero{overflow:hidden;position:relative;background:radial-gradient(circle at 88% 10%,#dcecff 0,transparent 31%),linear-gradient(135deg,#fff 0%,#f4f8ff 55%,#eaf2ff 100%);padding:82px 0 70px}.hero:before{content:"";position:absolute;width:520px;height:520px;border:90px solid rgba(245,189,23,.12);border-radius:50%;right:-260px;bottom:-260px}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:1.7px;font-size:12px;font-weight:950;color:var(--blue)}.eyebrow i{width:30px;height:3px;background:var(--gold);border-radius:9px}h1{font-size:clamp(42px,6vw,72px);line-height:1.01;letter-spacing:-3px;margin:15px 0 20px}.blue{color:var(--blue)}.lead{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 20px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 19px;border-radius:14px;font-weight:900;border:1px solid transparent;cursor:pointer}.primary{background:var(--blue);color:#fff;box-shadow:0 12px 25px rgba(18,100,216,.24)}.primary:hover{background:#0d56bd}.secondary{background:#fff;border-color:var(--line);color:var(--navy)}.gold{background:var(--gold);color:var(--navy)}.mini{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:8px}.mini b{color:var(--navy)}
+.hero-card{background:rgba(255,255,255,.86);border:1px solid rgba(255,255,255,.95);box-shadow:var(--shadow);border-radius:30px;padding:28px;position:relative}.hero-logo{display:grid;place-items:center;min-height:310px;border-radius:22px;background:linear-gradient(145deg,#071d49,#0c428e);overflow:hidden;position:relative}.hero-logo:before,.hero-logo:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.16)}.hero-logo:before{width:340px;height:340px}.hero-logo:after{width:220px;height:220px}.hero-logo img{width:170px;height:170px;object-fit:cover;border-radius:28px;position:relative;z-index:2;box-shadow:0 25px 55px rgba(0,0,0,.25)}.floating{position:absolute;background:#fff;border-radius:16px;padding:12px 14px;box-shadow:0 15px 35px rgba(7,29,73,.2);font-size:12px;font-weight:900}.f1{left:16px;top:18px}.f2{right:16px;bottom:18px}.dot{width:9px;height:9px;background:var(--gold);display:inline-block;border-radius:50%;margin-right:6px}
+section{padding:90px 0}.section-head{max-width:700px;margin-bottom:38px}.kicker{color:var(--blue);font-size:12px;font-weight:950;letter-spacing:1.7px;text-transform:uppercase}.section-head h2{font-size:clamp(31px,4vw,48px);line-height:1.08;letter-spacing:-1.8px;margin:10px 0 12px}.section-head p{color:var(--muted);font-size:17px;margin:0}
+.services{background:#fff}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:26px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 8px 30px rgba(7,29,73,.05);transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(7,29,73,.10)}.icon{width:48px;height:48px;border-radius:14px;background:#edf5ff;color:var(--blue);display:grid;place-items:center;font-weight:950;font-size:20px;margin-bottom:18px}.service h3{margin:0 0 8px;font-size:19px}.service p{margin:0;color:var(--muted);font-size:14px}
+.why{background:var(--bg)}.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}.why-card{background:var(--navy);color:#fff;border-radius:30px;padding:36px;box-shadow:var(--shadow);position:relative;overflow:hidden}.why-card:after{content:"KI";position:absolute;right:-15px;bottom:-45px;font-size:180px;font-weight:1000;color:rgba(255,255,255,.04)}.why-card h3{font-size:30px;line-height:1.1;margin:0 0 12px}.why-card p{color:#cbd9ef}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:14px}.check{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px}.check b{display:block;font-size:14px}.check span{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+.process{background:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:24px;border:1px solid var(--line);border-radius:20px}.num{font-size:13px;font-weight:950;color:var(--blue);margin-bottom:18px}.step h3{font-size:17px;margin:0 0 7px}.step p{font-size:13px;color:var(--muted);margin:0}
+.request{background:linear-gradient(135deg,#071d49,#0b3c83);color:#fff}.request-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.request h2{font-size:clamp(32px,4vw,50px);line-height:1.05;letter-spacing:-1.8px;margin:10px 0 15px}.request p{color:#cbd9ef}.contact-list{display:grid;gap:10px;margin-top:25px}.contact-list a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:13px 15px;border-radius:13px;font-weight:800;font-size:14px}.formbox{background:#fff;color:var(--ink);border-radius:26px;padding:25px;box-shadow:0 25px 70px rgba(0,0,0,.2)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:900;color:#42516a}.field input,.field select,.field textarea{width:100%;border:1px solid #d8e2ef;border-radius:12px;padding:12px 13px;outline:0;background:#fbfdff;color:var(--ink)}.field textarea{min-height:120px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(18,100,216,.08)}.form-note{font-size:11px;color:var(--muted);margin-top:10px}
+footer{background:#041533;color:#aebed8;padding:30px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot strong{color:#fff}.foot small{font-size:12px}.install{position:fixed;right:16px;bottom:16px;z-index:120;display:none}
+@media(max-width:900px){.links{gap:13px}.hero-grid,.why-grid,.request-grid{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.hero-card{max-width:600px;margin:auto}}
+@media(max-width:720px){.top .wrap{justify-content:center}.top .right{display:none}.nav{height:68px}.brand img{width:44px;height:44px}.brand-text{font-size:12px}.links{display:none;position:absolute;left:16px;right:16px;top:76px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:10px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.links.open{display:flex}.links a{padding:12px 14px}.nav-btn{text-align:center}.menu{display:block}.hero{padding:60px 0 55px}.hero-grid{gap:30px}h1{letter-spacing:-2px}.lead{font-size:17px}.hero-logo{min-height:250px}.hero-logo img{width:135px;height:135px}.grid,.checklist,.form-grid,.steps{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:65px 0}.formbox{padding:19px}.foot{flex-direction:column;align-items:flex-start}.install{display:inline-flex}.request-grid{gap:28px}}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span>Innovative Technology for a Greater Impact</span><span>Ganta City, Nimba County • Liberia</span></div></div>
-<nav><div class="wrap nav">
-<a class="brand" href="#top"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact logo"><span><b>KINGDOM</b> <span>IMPACT</span><br>TECHNOLOGIES INC.</span></a>
-<div class="links"><a href="#services">Services</a><a href="#about">About</a><a href="#process">How We Work</a><a href="#ai-assistant"></a><a href="#request">Request a Solution</a><a class="navcta" href="https://wa.me/231778579741" target="_blank">WhatsApp</a></div>
-</div></nav>
+<div class="top"><div class="wrap"><span>Innovative Technology for a Greater Impact</span><div class="right"><a href="tel:+231778579741">0778579741</a><a href="tel:+231880233332">0880233332</a></div></div></div>
 
-<main id="top">
-<header class="hero"><div class="wrap hero-grid">
+<header>
+<div class="wrap nav">
+<a class="brand" href="#home"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact Technologies logo"><div class="brand-text">KINGDOM IMPACT TECHNOLOGIES INC.<small>Your Technology Partner for a Brighter Future</small></div></a>
+<button class="menu" id="menu" aria-label="Open menu">☰</button>
+<nav class="links" id="links">
+<a href="#services">Services</a><a href="#why">Why Us</a><a href="#process">How We Work</a><a href="#request" class="nav-btn">Request a Solution</a>
+</nav>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="wrap hero-grid">
 <div>
-<div class="eyebrow">Your Technology Partner</div>
-<h1>Technology solutions built to <span>move your ideas forward.</span></h1>
-<p class="lead">We help individuals, businesses and organizations turn technology challenges into practical, reliable solutions—from websites and software to IT support, databases and professional training.</p>
-<div class="actions"><a class="btn primary" href="#request">Start a Project →</a><a class="btn secondary" href="#services">Explore Services</a></div>
-<div class="trust"><div><strong>Practical</strong>Solutions for real needs</div><div><strong>Reliable</strong>Support when you need it</div><div><strong>Professional</strong>Client-focused delivery</div></div>
+<div class="eyebrow"><i></i> Technology solutions in Liberia</div>
+<h1>Build smarter.<br><span class="blue">Work better.</span><br>Grow stronger.</h1>
+<p class="lead">Kingdom Impact Technologies Inc. helps businesses, organizations and individuals turn technology needs into practical, professional solutions.</p>
+<div class="actions">
+<a class="btn primary" href="#request">Start a Project →</a>
+<a class="btn secondary" href="https://wa.me/231778579741?text=Hello%20Kingdom%20Impact%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20technology%20solution." target="_blank" rel="noopener">WhatsApp Us</a>
 </div>
-<div class="hero-panel">
-<div class="hero-logo"><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact Technologies Inc."></div>
-<h3>Let's build the right solution.</h3>
-<p>Not sure what technology you need? Tell us the challenge in your own words. We'll help you identify a practical next step.</p>
-<div class="contact-row"><a class="contact-chip" href="tel:+231778579741"><strong>Call / WhatsApp</strong>0778579741</a><a class="contact-chip" href="tel:+231880233332"><strong>Call</strong>0880233332</a></div>
+<div class="mini"><span class="dot"></span><b>Ganta City, Nimba County</b> • Serving Liberia</div>
 </div>
-</div></header>
+<div class="hero-card">
+<div class="hero-logo"><span class="floating f1">Professional support</span><img src="kingdom-impact-logo.jpg" alt="Kingdom Impact logo"><span class="floating f2">Reliable technology</span></div>
+</div>
+</div>
+</section>
 
+<section class="services" id="services">
+<div class="wrap">
+<div class="section-head"><div class="kicker">What we do</div><h2>Technology services built around your needs.</h2><p>From a new website to business software, networking or databases, we focus on useful solutions that are easy to understand and support.</p></div>
+<div class="grid">
+<article class="service"><div class="icon">01</div><h3>Software Development</h3><p>Custom business applications and digital tools designed around your workflow and goals.</p></article>
+<article class="service"><div class="icon">02</div><h3>Web Design & Development</h3><p>Modern, responsive websites and web apps that present your organization professionally on every screen.</p></article>
+<article class="service"><div class="icon">03</div><h3>IT Support & Networking</h3><p>Practical technology support, network setup and troubleshooting to keep your operations moving.</p></article>
+<article class="service"><div class="icon">04</div><h3>Database Solutions</h3><p>Organized, reliable data systems for storing, managing and accessing important business information.</p></article>
+<article class="service"><div class="icon">05</div><h3>Training & Consulting</h3><p>Hands-on technology training and clear guidance to help people and organizations use technology effectively.</p></article>
+<article class="service"><div class="icon">06</div><h3>Professional Technology Support</h3><p>Long-term technical assistance for organizations that need a dependable technology partner.</p></article>
+</div>
+</div>
+</section>
 
+<section class="why" id="why">
+<div class="wrap why-grid">
+<div class="why-card"><div class="kicker" style="color:#ffd84a">Why Kingdom Impact</div><h3>Technology should make your work easier — not harder.</h3><p>We combine professional service, practical thinking and modern technology to help clients move from ideas to results.</p><a class="btn gold" href="#request">Talk to our team →</a></div>
+<div><div class="section-head"><div class="kicker">Our commitment</div><h2>A partner you can keep growing with.</h2><p>We aim to make every project clear, useful and supportable after launch.</p></div><div class="checklist">
+<div class="check"><b>Professional & Reliable</b><span>Clear communication and dependable delivery.</span></div>
+<div class="check"><b>Affordable Pricing</b><span>Solutions designed with your budget in mind.</span></div>
+<div class="check"><b>Customer Satisfaction</b><span>Your needs stay at the center of the work.</span></div>
+<div class="check"><b>Modern Solutions</b><span>Current tools and responsive digital experiences.</span></div>
+<div class="check"><b>Experienced Team</b><span>Practical technical knowledge for real needs.</span></div>
+<div class="check"><b>Long-Term Support</b><span>Help doesn't have to stop when a project launches.</span></div>
+</div></div>
+</div>
+</section>
 
+<section class="process" id="process">
+<div class="wrap">
+<div class="section-head"><div class="kicker">How we work</div><h2>Simple process. Clear communication.</h2><p>Tell us what you need. We help you understand the options and move forward step by step.</p></div>
+<div class="steps">
+<div class="step"><div class="num">01 / DISCOVER</div><h3>Understand your need</h3><p>We listen to your goals, challenges and requirements.</p></div>
+<div class="step"><div class="num">02 / PLAN</div><h3>Define the solution</h3><p>We outline a practical approach, scope and next steps.</p></div>
+<div class="step"><div class="num">03 / BUILD</div><h3>Create & implement</h3><p>We develop, configure or support the technology you need.</p></div>
+<div class="step"><div class="num">04 / SUPPORT</div><h3>Keep improving</h3><p>We remain available for guidance, support and future needs.</p></div>
+</div>
+</div>
+</section>
 
-
-
+<section class="request" id="request">
+<div class="wrap request-grid">
+<div>
+<div class="kicker" style="color:#ffd84a">Start a conversation</div>
+<h2>Tell us what you want to build.</h2>
+<p>Send your request and our team can follow up with you. You can also contact us directly by phone or WhatsApp.</p>
+<div class="contact-list">
+<a href="tel:+231778579741">☎ 0778579741</a>
+<a href="tel:+231880233332">☎ 0880233332</a>
+<a href="mailto:kingdomimpact2026@gmail.com">✉ kingdomimpact2026@gmail.com</a>
+<a href="https://wa.me/231778579741?text=Hello%20Kingdom%20Impact%20Technologies%2C%20I%20would%20like%20to%20discuss%20a%20technology%20solution." target="_blank" rel="noopener">☘ WhatsApp Kingdom Impact</a>
+</div>
+</div>
+<div class="formbox">
+<form action="https://formsubmit.co/kingdomimpact2026@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Client Request - Kingdom Impact Technologies Inc.">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://kingdomimpact2026-collab.github.io/kingdom-impact/">
+<div class="form-grid">
+<div class="field"><label>Full name *</label><input name="name" required placeholder="Your name"></div>
+<div class="field"><label>Phone / WhatsApp *</label><input name="phone" required placeholder="077..."></div>
+<div class="field"><label>Business / Organization</label><input name="organization" placeholder="Organization name"></div>
+<div class="field"><label>Email</label><input type="email" name="email" placeholder="you@example.com"></div>
+<div class="field full"><label>Service needed *</label><select name="service" required><option value="">Choose a service</option><option>Software Development</option><option>Web Design & Development</option><option>IT Support & Networking</option><option>Database Solutions</option><option>Training & Consulting</option><option>Professional Technology Support</option><option>Other</option></select></div>
+<div class="field full"><label>Tell us what you need *</label><textarea name="message" required placeholder="Briefly describe your project, problem or idea..."></textarea></div>
+<div class="field full"><button class="btn primary" type="submit">Submit Request →</button></div>
+</div>
+<div class="form-note">Your request is sent to kingdomimpact2026@gmail.com. If you prefer, use WhatsApp above for a direct conversation.</div>
+</form>
+</div>
+</div>
+</section>
 </main>
 
-<footer><div class="wrap"><div class="footer-grid">
-<div><div class="footer-title">KINGDOM IMPACT TECHNOLOGIES INC.</div><div class="footer-text">Innovative Technology for a Greater Impact.<br><br>Your Technology Partner for a Brighter Future.</div></div>
-<div><div class="footer-title">Services</div><div class="footer-links"><a href="#services">Software Development</a><a href="#services">Web Design & Development</a><a href="#services">IT Support & Networking</a><a href="#services">Database Solutions</a></div></div>
-<div><div class="footer-title">Contact</div><div class="footer-text">0778579741 / 0880233332<br>kingdomimpact2026@gmail.com<br>Ganta City, Nimba County, Liberia</div></div>
-</div><div class="copyright"><span>© 2026 Kingdom Impact Technologies Inc.</span><span>INNOVATION / TECHNOLOGY / IMPACT</span></div></div></footer>
+<footer><div class="wrap foot"><div><strong>KINGDOM IMPACT TECHNOLOGIES INC.</strong><br><small>Innovative Technology for a Greater Impact</small></div><small>Ganta City, Nimba County, Liberia</small></div></footer>
+<button class="btn primary install" id="install">Install App</button>
 
-<button id="installAppBtn" class="install" type="button" style="display:none">📲 Install App</button>
-
-
-
-</body></html>
+<script>
+const menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+let deferredPrompt;
+const install=document.getElementById('install');
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e;install.style.display='inline-flex'});
+install.addEventListener('click',async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;install.style.display='none'});
+if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(()=>{}));
+</script>
+</body>
+</html>

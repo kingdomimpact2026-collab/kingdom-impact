@@ -1,14 +1,13 @@
-# Kingdom Impact Technologies Inc. — Professional PWA (No AI)
+KINGDOM IMPACT TECHNOLOGIES INC.
+Professional No-AI PWA
 
-
-
-Included:
-- Professional corporate website
-- Detailed service sections
-- Request a Solution form
-- Email submission to kingdomimpact2026@gmail.com via FormSubmit
-- WhatsApp and phone contact
-- Installable PWA support
-- Kingdom Impact branding and logo
-
-Host over HTTPS, such as GitHub Pages.
+Upload all files in this folder to the root of your GitHub Pages repository.
+The site includes:
+- Professional responsive design
+- Mobile navigation
+- Services, Why Us, Process and Request sections
+- Email request form using FormSubmit
+- Phone and WhatsApp contact
+- Installable PWA
+- Offline shell
+- No AI/chatbot feature

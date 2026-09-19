@@ -1,5 +1,10 @@
-const CACHE='kingdom-impact-professional-no-ai-v2';
-const SHELL=['./','./index.html','./manifest.json','./kingdom-impact-professional-no-ai-v2.jpg','./kingdom-impact-professional-no-ai-v2.png'];
-self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)));self.skipWaiting();});
-self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))));self.clients.claim();});
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(c=>c||fetch(e.request).then(r=>{const x=r.clone();caches.open(CACHE).then(c=>c.put(e.request,x));return r;}).catch(()=>caches.match('./index.html'))));});
+const CACHE='kingdom-impact-wow-v3';
+const ASSETS=['./','./index.html','./manifest.json','./kingdom-impact-logo.jpg','./kingdom-impact-icon.png'];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET') return;
+  event.respondWith(fetch(event.request).then(response=>{
+    const copy=response.clone(); caches.open(CACHE).then(c=>c.put(event.request,copy)); return response;
+  }).catch(()=>caches.match(event.request).then(r=>r||caches.match('./index.html'))));
+});
